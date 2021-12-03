@@ -15,6 +15,9 @@
    align-items: center;
    border-bottom: 1px solid #E4E9F2;
    height: 112px;
+   position: fixed;
+   top:0;left:0;right:0;
+   z-index: 1000;
 }
 
 .header .logo img {
@@ -26,7 +29,6 @@
     display:flex;
     justify-items: center;
 }
-
 
 .header-inner-wrapper .navbar {
     margin-left:57px;
@@ -53,3 +55,86 @@
     width:50px;
     height: 50px;
 }
+
+.header .cart-items-container {
+    position: absolute;
+    top:100%;
+    right:2%;
+    width:360px;
+    /* background-color: plum; */
+    height: calc(100vh - 165px);
+    padding: 0rem 1.5rem 1.5rem 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px 0 rgb(0 0 0 / 20%), 0 9px 14px 0 rgb(0 0 0 / 19%);
+}
+
+.header .cart-items-container .cart-header {
+    height: 67px;
+    display:flex;
+    justify-items: center;
+    border-bottom: 1px solid #E4E9F2;
+    line-height: 67px;
+}
+.header .cart-items-container .cart-header h2 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.header .cart-items-container .cart-body {
+    /* background: #69707D; */
+    height:295px;
+}
+
+.header .cart-items-container .cart-body .cart-item {
+    display: flex;
+    position: relative;
+    margin-top:25px;
+}
+
+.header .cart-items-container .cart-body .cart-item .delete {
+    position: absolute;
+    top: 1rem;
+    right:2px;
+    cursor: pointer;
+}
+
+.header .cart-items-container .cart-body .card-thumbnail {
+    width:50px;
+    height:50px;
+} 
+
+.header .cart-items-container .cart-body .cart-item .content h3 {
+    font-size:16px;
+    font-weight: 400;
+    margin-left:15px;
+}
+
+.header .cart-items-container .cart-body .cart-item .content .price {
+    font-size:16px;
+    font-weight: 400;
+    margin-left:15px;
+}
+
+.header .cart-items-container .cart-body .cart-item .content .price .bold {
+    font-size:16px;
+    font-weight: bold;
+}
+
+.header .cart-items-container .cart-footer {
+
+}
+.header .cart-items-container .cart-footer .btn {
+    width:100%;
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.9rem 3rem;
+    font-size: 16px;
+    font-weight:bold;
+    color: #fff;
+    background: orangered;
+    border-radius:10px;
+    cursor: pointer;
+    text-align: center;
+}
+
+
