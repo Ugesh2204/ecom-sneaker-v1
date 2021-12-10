@@ -17,12 +17,17 @@
 </head>
 <body>
 
+  <div id="overlay"></div>
+
   <header class="header">
     <div class="header-inner-wrapper">
+        <div class="fas fa-bars hamburger" id="hamburger-btn"></div>
+
         <a href="#" class="logo">
             <img src="images/logo.svg" alt=""/>
           </a>
           <nav class="navbar">
+              <span class="fas fa-times close" id="mobileclose-btn"></span>
             <a href="#home" class="rm-hack">Collections</a>
             <a href="#Men">Men</a>
             <a href="#Women">Women</a>
@@ -31,7 +36,7 @@
           </nav>
     </div>    
     <div class="icon">
-      <div class="cart" id="cart-btn">
+      <div id="cart-btn" class="cart" >
         <img src="images/icon-cart.svg"/>
       </div>
 
@@ -76,5 +81,7 @@
   </header>
   
  
+
+  <script src="./js/script.js"></script>
 </body>
 </html>
